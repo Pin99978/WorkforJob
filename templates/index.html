@@ -177,11 +177,10 @@
                 <ul class="nav flex-column sub-menu">
 
                   <!-- The place which need to render from Tool Database -->
-
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">TKT5-18</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">TKT5-19</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">TKT5-20</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">AKT6-4</a></li>
+                  {% for tool in toollist %}  
+                    <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">{{tool.tools}}</a></li>
+                    
+                  {% endfor %}
 
                 </ul>
               </div>
