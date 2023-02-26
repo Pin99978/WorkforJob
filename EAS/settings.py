@@ -38,13 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'django_filters',
     # EAS: edding the each page in the install App
-    'home',
-    'eFly',
-    'errCenter',
-    'toolBasic',
-    'toolMonitor',
+    'eas_basic'
 ]
 
 MIDDLEWARE = [
@@ -64,6 +60,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         
         # EAS: Adding the html folder path here (templates) 
+        
         
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,

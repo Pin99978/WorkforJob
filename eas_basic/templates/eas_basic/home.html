@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block toollist %}
+
+<div class="collapse" id="ui-basic">
+  <ul class="nav flex-column sub-menu">
+    {% for tool in tool %}  
+
+    <li class="nav-item"> <a class="nav-link" href="{{tool.name}}">{{tool.name}}</a> 
+    
+    </li>
+{% endfor %}
+  </ul>
+</div>
+  <!-- The place which need to render from Tool Database -->
+
+{% endblock  %}
+{% block content %}
+<div class="d-xl-flex justify-content-between align-items-start">
+  <h2 class="text-dark font-weight-bold mb-2"> Current Alarm </h2>
+  <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
+    <!-- EAS : Update current Date -->
+    <div class="dropdown ml-0 ml-md-4 mt-2 mt-lg-0">
+      <button class="btn bg-white dropdown-toggle p-3 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-calendar mr-1"></i> {% now "jS F Y H:i:s" %} </button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="d-sm-flex justify-content-between align-items-center transaparent-tab-border {">
+      <ul class="nav nav-tabs tab-transparent" role="tablist">
+        <li class="nav-item">
+          
+        </li>
+
+      </ul>
+    </div>
+    <div class="tab-content tab-transparent-content">
+      <div class="tab-pane fade show active" id="business-1" role="tabpanel" aria-labelledby="business-tab">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

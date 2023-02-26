@@ -15,16 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path , include
-from home.views import home , tool_list 
-from register.views import login
+
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # home page
-    path('home/', tool_list , name = 'home_url'),
-    # login page
-    path('login/', login , name = 'login_url'),
-
+    
+    # import EAS base page ( home , login)
+    path('', include('eas_basic.urls'))
 ]
 
 
