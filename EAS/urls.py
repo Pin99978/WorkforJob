@@ -23,7 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # import EAS base page ( home , login)
-    path('', include('eas_basic.urls'))
+    path('', include('eas_basic.urls')),
+    path('', include('efly.urls'))
+                     
 ]
 
 

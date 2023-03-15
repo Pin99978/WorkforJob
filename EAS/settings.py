@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_filters',
     # EAS: edding the each page in the install App
-    'eas_basic'
+    'eas_basic',
+    'efly'
 ]
 
 MIDDLEWARE = [
